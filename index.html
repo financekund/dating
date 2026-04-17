@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Dating Hub 2026 – Best Dating Tips & Guides</title>
 
-<meta name="description" content="Best dating tips, apps, and attraction guides. Improve matches and conversations.">
+<meta name="description" content="Best dating tips, apps, attraction psychology and relationship guides 2026.">
+<meta name="keywords" content="dating tips, dating apps, relationship guide, tinder tips, bumble tips">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-<div id="header"></div>
 
-<header>
-  <h1>🔥 Dating Hub 2026</h1>
-</header>
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
 
 <div class="container">
 
-<!-- 🔥 AD 1 -->
-<div class="ad-box"><script async="async" data-cfasync="false" src="https://pl29172046.profitablecpmratenetwork.com/767abe7f8e3914c9029763f0163a03ef/invoke.js"></script>
+<!-- TOP AD -->
+<div class="ad-box">
+<script async="async" data-cfasync="false" src="https://pl29172046.profitablecpmratenetwork.com/767abe7f8e3914c9029763f0163a03ef/invoke.js"></script>
 <div id="container-767abe7f8e3914c9029763f0163a03ef"></div>
 </div>
 
-<!-- POSTS CONTAINER -->
+<!-- POSTS -->
 <div id="postContainer"></div>
 
-<!-- 🔥 AD 2 -->
-<div class="ad-box"><script>
+<!-- BOTTOM AD -->
+<div class="ad-box">
+<script>
   atOptions = {
     'key' : '880cd92a21fc45ccdc2edcb12b52875f',
     'format' : 'iframe',
@@ -42,76 +44,65 @@
 <script src="https://www.highperformanceformat.com/880cd92a21fc45ccdc2edcb12b52875f/invoke.js"></script>
 </div>
 
-<!-- LOAD MORE BUTTON -->
+<!-- NEXT BUTTON -->
 <button id="loadMoreBtn" class="btn">Next Page</button>
 
 </div>
 
-<footer>
-  © 2026 Dating Hub
-</footer>
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+/* =========================
+   HEADER FOOTER LOAD
+========================= */
+async function loadComponent(id, file){
+  const res = await fetch(file);
+  const data = await res.text();
+  document.getElementById(id).innerHTML = data;
+}
 
+loadComponent("header","/header.html");
+loadComponent("footer","/footer.html");
+
+/* =========================
+   POSTS DATA
+========================= */
 const posts = [
-
 {title:"Best Dating Apps for Serious Relationships", link:"best-dating-apps-in-india-for-serious-relationships.html", desc:"Find apps for real connections."},
-
-{title:"Top Free Dating Apps That Work", link:"top-free-dating-apps-that-actually-work-for-guys.html", desc:"Free apps that give results."},
-
-{title:"Tinder vs Bumble vs Hinge", link:"tinder-vs-bumble-vs-hinge-which-is-best.html", desc:"Compare top dating apps."},
-
-{title:"Get More Matches Fast", link:"how-to-get-more-matches-on-dating-apps-fast.html", desc:"Increase matches instantly."},
-
-{title:"Dating Apps Without Subscription", link:"dating-apps-without-subscription-real-or-fake.html", desc:"Free vs paid truth."},
-
+{title:"Top Free Dating Apps That Work", link:"top-free-dating-apps-that-actually-work-for-guys.html", desc:"Free apps that work."},
+{title:"Tinder vs Bumble vs Hinge", link:"tinder-vs-bumble-vs-hinge-which-is-best.html", desc:"Compare dating apps."},
+{title:"Get More Matches Fast", link:"how-to-get-more-matches-on-dating-apps-fast.html", desc:"Increase matches quickly."},
+{title:"Dating Apps Without Subscription", link:"dating-apps-without-subscription-real-or-fake.html", desc:"Truth about free apps."},
 {title:"Female Psychology in Dating", link:"female-psychology-in-dating-what-men-should-know.html", desc:"Understand attraction."},
-
 {title:"Signs She Likes You", link:"signs-a-girl-likes-you-but-is-hiding-it.html", desc:"Hidden signals."},
-
-{title:"Attract Women Naturally", link:"how-to-attract-women-naturally-without-trying-too-hard.html", desc:"No effort tricks."},
-
+{title:"Attract Women Naturally", link:"how-to-attract-women-naturally-without-trying-too-hard.html", desc:"Natural attraction tips."},
 {title:"Why Girls Lose Interest", link:"why-girls-lose-interest-quickly-and-how-to-fix-it.html", desc:"Fix mistakes."},
+{title:"Attraction Psychology", link:"male-attraction-psychology-that-actually-works.html", desc:"Real psychology tips."},
 
-{title:"Attraction Psychology", link:"male-attraction-psychology-that-actually-works.html", desc:"Real principles."},
-
-// NEXT PAGE POSTS 👇
-
-{title:"Build Attraction Early", link:"how-to-build-attraction-in-early-dating-stage.html", desc:"Strong first impression."},
-
+{title:"Build Attraction Early", link:"how-to-build-attraction-in-early-dating-stage.html", desc:"First impression tips."},
 {title:"Best Opening Lines", link:"best-opening-lines-for-dating-apps-that-get-replies.html", desc:"Get replies fast."},
-
-{title:"Talk Without Being Boring", link:"how-to-talk-to-girls-online-without-being-boring.html", desc:"Improve chat."},
-
-{title:"Best Bio Examples", link:"best-dating-profile-bio-examples-for-men.html", desc:"More matches."},
-
-{title:"Turn Matches Into Dates", link:"how-to-turn-matches-into-real-dates-step-by-step.html", desc:"Step guide."},
-
+{title:"Talk Without Being Boring", link:"how-to-talk-to-girls-online-without-being-boring.html", desc:"Better conversations."},
+{title:"Best Bio Examples", link:"best-dating-profile-bio-examples-for-men.html", desc:"Profile boost."},
+{title:"Turn Matches Into Dates", link:"how-to-turn-matches-into-real-dates-step-by-step.html", desc:"Convert matches."},
 {title:"Texting Tips", link:"how-to-text-a-girl-and-keep-her-interested.html", desc:"Keep interest."},
-
 {title:"First Date Ideas", link:"best-first-date-ideas-that-always-work.html", desc:"Impress easily."},
-
-{title:"Profile Photo Tips", link:"how-to-improve-your-dating-profile-photos.html", desc:"Boost attraction."},
-
+{title:"Profile Photo Tips", link:"how-to-improve-your-dating-profile-photos.html", desc:"Better profile pics."},
 {title:"What To Say After Hello", link:"what-to-say-after-hello-on-dating-apps.html", desc:"Continue chat."},
-
-{title:"Flirt Naturally", link:"how-to-flirt-naturally-without-being-awkward.html", desc:"No awkwardness."},
-
+{title:"Flirt Naturally", link:"how-to-flirt-naturally-without-being-awkward.html", desc:"No awkwardness tips."},
 {title:"Real vs Fake Interest", link:"signs-of-real-attraction-vs-fake-interest.html", desc:"Know difference."},
-
-{title:"Build Confidence", link:"how-to-build-confidence-for-dating.html", desc:"Improve mindset."},
-
-{title:"Dating Mistakes", link:"common-dating-mistakes-men-should-avoid.html", desc:"Avoid errors."},
-
-{title:"Keep Conversation Going", link:"how-to-keep-conversation-going-without-running-out-of-topics.html", desc:"Never run out."},
-
+{title:"Build Confidence", link:"how-to-build-confidence-for-dating.html", desc:"Confidence tips."},
+{title:"Dating Mistakes", link:"common-dating-mistakes-men-should-avoid.html", desc:"Avoid mistakes."},
+{title:"Keep Conversation Going", link:"how-to-keep-conversation-going-without-running-out-of-topics.html", desc:"Never run out of topics."},
 {title:"Dating Tips for Beginners", link:"online-dating-tips-for-beginners-2026.html", desc:"Start smart."}
-
 ];
 
 let currentIndex = 0;
 const perPage = 10;
 
+/* =========================
+   LOAD POSTS
+========================= */
 function loadPosts(){
   const container = document.getElementById("postContainer");
 
@@ -119,12 +110,12 @@ function loadPosts(){
     const p = posts[i];
 
     container.innerHTML += `
-    <div class="post">
-      <h2><a href="${p.link}">${p.title}</a></h2>
-      <p>${p.desc}</p>
-<div id="ad-slot"></div><script>fetch("/ads/ad.html").then(r=>r.text()).then(d=>document.getElementById("ad-slot").innerHTML=d);</script>
-      <a href="${p.link}" class="btn">Read More</a>
-    </div>`;
+      <div class="post">
+        <h2><a href="${p.link}">${p.title}</a></h2>
+        <p>${p.desc}</p>
+        <a href="${p.link}" class="btn">Read More</a>
+      </div>
+    `;
   }
 
   currentIndex += perPage;
@@ -136,19 +127,10 @@ function loadPosts(){
 
 document.getElementById("loadMoreBtn").addEventListener("click", loadPosts);
 
-// FIRST LOAD
+/* FIRST LOAD */
 loadPosts();
 
 </script>
 
-<div id="footer"></div>
-<script>
-async function loadComponent(id,file){const r=await fetch(file);const t=await r.text();document.getElementById(id).innerHTML=t;}
-loadComponent("header","/header.html");
-loadComponent("footer","/footer.html");
-</script>
-<script src="https://pl29172047.profitablecpmratenetwork.com/62/a3/81/62a3812ea31d691a69e5b5ca8aafd811.js"></script>
-<script async="async" data-cfasync="false" src="https://pl29172046.profitablecpmratenetwork.com/767abe7f8e3914c9029763f0163a03ef/invoke.js"></script>
-<div id="container-767abe7f8e3914c9029763f0163a03ef"></div>
 </body>
 </html>
