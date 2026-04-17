@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dating Hub 2026 – Best Dating Tips & Guides</title>
+
+<meta name="description" content="Best dating tips, apps, and attraction guides. Improve matches and conversations.">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="header"></div>
+
+<header>
+  <h1>🔥 Dating Hub 2026</h1>
+</header>
+
+<div class="container">
+
+<!-- 🔥 AD 1 -->
+<div class="ad-box">AD SPACE 1</div>
+
+<!-- POSTS CONTAINER -->
+<div id="postContainer"></div>
+
+<!-- 🔥 AD 2 -->
+<div class="ad-box">AD SPACE 2</div>
+
+<!-- LOAD MORE BUTTON -->
+<button id="loadMoreBtn" class="btn">Next Page</button>
+
+</div>
+
+<!-- 🔥 STICKY AD -->
+<div class="sticky-ad">AD SPACE 3</div>
+
+<footer>
+  © 2026 Dating Hub
+</footer>
+
+<script>
+
+const posts = [
+
+{title:"Best Dating Apps for Serious Relationships", link:"best-dating-apps-in-india-for-serious-relationships.html", desc:"Find apps for real connections."},
+
+{title:"Top Free Dating Apps That Work", link:"top-free-dating-apps-that-actually-work-for-guys.html", desc:"Free apps that give results."},
+
+{title:"Tinder vs Bumble vs Hinge", link:"tinder-vs-bumble-vs-hinge-which-is-best.html", desc:"Compare top dating apps."},
+
+{title:"Get More Matches Fast", link:"how-to-get-more-matches-on-dating-apps-fast.html", desc:"Increase matches instantly."},
+
+{title:"Dating Apps Without Subscription", link:"dating-apps-without-subscription-real-or-fake.html", desc:"Free vs paid truth."},
+
+{title:"Female Psychology in Dating", link:"female-psychology-in-dating-what-men-should-know.html", desc:"Understand attraction."},
+
+{title:"Signs She Likes You", link:"signs-a-girl-likes-you-but-is-hiding-it.html", desc:"Hidden signals."},
+
+{title:"Attract Women Naturally", link:"how-to-attract-women-naturally-without-trying-too-hard.html", desc:"No effort tricks."},
+
+{title:"Why Girls Lose Interest", link:"why-girls-lose-interest-quickly-and-how-to-fix-it.html", desc:"Fix mistakes."},
+
+{title:"Attraction Psychology", link:"male-attraction-psychology-that-actually-works.html", desc:"Real principles."},
+
+// NEXT PAGE POSTS 👇
+
+{title:"Build Attraction Early", link:"how-to-build-attraction-in-early-dating-stage.html", desc:"Strong first impression."},
+
+{title:"Best Opening Lines", link:"best-opening-lines-for-dating-apps-that-get-replies.html", desc:"Get replies fast."},
+
+{title:"Talk Without Being Boring", link:"how-to-talk-to-girls-online-without-being-boring.html", desc:"Improve chat."},
+
+{title:"Best Bio Examples", link:"best-dating-profile-bio-examples-for-men.html", desc:"More matches."},
+
+{title:"Turn Matches Into Dates", link:"how-to-turn-matches-into-real-dates-step-by-step.html", desc:"Step guide."},
+
+{title:"Texting Tips", link:"how-to-text-a-girl-and-keep-her-interested.html", desc:"Keep interest."},
+
+{title:"First Date Ideas", link:"best-first-date-ideas-that-always-work.html", desc:"Impress easily."},
+
+{title:"Profile Photo Tips", link:"how-to-improve-your-dating-profile-photos.html", desc:"Boost attraction."},
+
+{title:"What To Say After Hello", link:"what-to-say-after-hello-on-dating-apps.html", desc:"Continue chat."},
+
+{title:"Flirt Naturally", link:"how-to-flirt-naturally-without-being-awkward.html", desc:"No awkwardness."},
+
+{title:"Real vs Fake Interest", link:"signs-of-real-attraction-vs-fake-interest.html", desc:"Know difference."},
+
+{title:"Build Confidence", link:"how-to-build-confidence-for-dating.html", desc:"Improve mindset."},
+
+{title:"Dating Mistakes", link:"common-dating-mistakes-men-should-avoid.html", desc:"Avoid errors."},
+
+{title:"Keep Conversation Going", link:"how-to-keep-conversation-going-without-running-out-of-topics.html", desc:"Never run out."},
+
+{title:"Dating Tips for Beginners", link:"online-dating-tips-for-beginners-2026.html", desc:"Start smart."}
+
+];
+
+let currentIndex = 0;
+const perPage = 10;
+
+function loadPosts(){
+  const container = document.getElementById("postContainer");
+
+  for(let i = currentIndex; i < currentIndex + perPage && i < posts.length; i++){
+    const p = posts[i];
+
+    container.innerHTML += `
+    <div class="post">
+      <h2><a href="${p.link}">${p.title}</a></h2>
+      <p>${p.desc}</p>
+      <a href="${p.link}" class="btn">Read More</a>
+    </div>`;
+  }
+
+  currentIndex += perPage;
+
+  if(currentIndex >= posts.length){
+    document.getElementById("loadMoreBtn").style.display = "none";
+  }
+}
+
+document.getElementById("loadMoreBtn").addEventListener("click", loadPosts);
+
+// FIRST LOAD
+loadPosts();
+
+</script>
+
+<div id="footer"></div>
+<script>
+async function loadComponent(id,file){const r=await fetch(file);const t=await r.text();document.getElementById(id).innerHTML=t;}
+loadComponent("header","/header.html");
+loadComponent("footer","/footer.html");
+</script>
+</body>
+</html>

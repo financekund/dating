@@ -1,0 +1,242 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT COLORS */
+:root {
+  --main: #00bfff;
+  --main-dark: #009acd;
+  --bg: #f0faff;
+  --text: #222;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e6f7ff, #ffffff);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #00bfff, #87cefa);
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 12px;
+}
+
+/* POST CARD (3D EFFECT) */
+.post {
+  background: #fff;
+  margin: 15px 0;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 
+    0 8px 20px rgba(0,0,0,0.08),
+    inset 0 -3px 0 rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 
+    0 15px 30px rgba(0,0,0,0.12),
+    inset 0 -4px 0 rgba(0,0,0,0.08);
+}
+
+.post h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.post p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  margin: 12px 0;
+  color: var(--main-dark);
+}
+
+/* PARAGRAPH BOX (3D) */
+p {
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 12px 0;
+  box-shadow: 
+    0 5px 15px rgba(0,0,0,0.05),
+    inset 0 -2px 0 rgba(0,0,0,0.04);
+}
+
+/* LINKS */
+a {
+  color: var(--main-dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* BUTTON (3D GLOW) */
+.btn, button {
+  display: inline-block;
+  padding: 12px 16px;
+  background: linear-gradient(145deg, #00bfff, #009acd);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 
+    0 5px 15px rgba(0,191,255,0.4),
+    inset 0 -3px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.btn:hover, button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 20px rgba(0,191,255,0.6),
+    inset 0 -2px 0 rgba(0,0,0,0.2);
+}
+
+/* AD BOX */
+.ad-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 25px;
+  margin: 20px 0;
+  text-align: center;
+  color: #aaa;
+  box-shadow: 
+    0 5px 15px rgba(0,0,0,0.05),
+    inset 0 -3px 0 rgba(0,0,0,0.05);
+}
+
+/* TIMER BOX */
+.timer-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* TIMER CIRCLE */
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 6px solid #00bfff;
+  border-top: 6px solid #fff;
+  border-radius: 50%;
+  margin: 10px auto;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+th {
+  background: var(--main);
+  color: #fff;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* LIST */
+ul, ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e6f7ff;
+  font-size: 13px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* STICKY AD */
+.sticky-ad {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  z-index: 999;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .post {
+    padding: 12px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn, button {
+    width: 100%;
+    text-align: center;
+  }
+
+}
